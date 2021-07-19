@@ -3,6 +3,8 @@ const path = require("path");
 
 const app = express();
 
+require("dotenv").config();
+
 const buildPath = process.env.BUILD_PATH;
 
 app.use(express.static(buildPath));
